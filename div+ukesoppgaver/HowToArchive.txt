@@ -1,0 +1,12 @@
+How to create an archive File
+.tar
+
+You should create a tar'ed or zipped archive where the top-level directory is your
+username.
+If your username is 'myusername ' and you want to tar it:
+
+> mkdir myusername 
+> mv YourProgram.java utskrift.txt README.txt myusername/ 
+> tar -czf myusername.tgz myusername/
+
+This will give you a file called myusername.tgz which holds all the content of the assignment in a zipped (compressed) tar-file.

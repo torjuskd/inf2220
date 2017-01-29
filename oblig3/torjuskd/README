@@ -1,0 +1,108 @@
+README
+
+1.   An explanation of your algorithm and why it works.  
+     Use common sense there, for instance, a lengthy repetition of the principles of Boyer-Moore-Horspool  etc  is  not  needed/wished.   
+     Concentrate  on your solution  and highlight, if it helps understanding, special points of the code.
+
+     In general the algorithm works like Boyer-Moore-Horspool, with some changes and additions.
+     The algorithm updates the bad shifts to match the wildcards added. 
+     It looks up all the indexes, where it can find a match (not just the first match).
+     	1. If the needle-character is the same as haystack one, or the needle character is '_' it  will match the corresponding haystack-char.
+     	2. The matching part is added to an array(list).
+	3. We skip forward using bad character shift values, and keep looking for new matches.
+     When finished the list is returned and printed.
+
+2.   How to compile your program (ie.  javac *.java)
+
+     >javac *.java
+     
+     To run:
+     
+     >java Oblig3 <needle> <haystack>
+ 
+3.   Which file includes the main-method
+
+     Oblig3.java
+     
+     eg:
+     To run:
+     
+     >java Oblig3 <needle> <haystack>
+ 
+4.   Any assumptions you have made when implementing the assignment
+     I am assuming that both the files for needle and haystack are non-empty.
+ 
+5.   Any peculiarities about your implementation 
+
+6.   The status of your delivery (what works and what does not) 
+
+7.   Give credit if your code is heavily influenced by some source (ie.  teaching material)
+
+     A substantial ammount of the code was burrowed from the slides on Boyer-Moore-Horspool
+
+8.   A few test cases that thoroughly tests your algorithm and the result it produces. 
+     Test  different  positions  and  numbers  of  wildcards  in  the  needle.   
+     Remember testing edge-cases such as empty needles/haystack.
+
+     The algorithm should handle different ammounts of wildcards, at different locations,
+     or purely needles consisting purely of wildcards.
+
+     If the user inputs an empty needle or empty haystack, an error message will be printed,
+     and the application terminate.
+
+     Some test files are have been added to the delivery. The output is posted below:
+     the needle files are meant to be tested against their haystack counterparts, eg:
+     
+     java Oblig3 needle.txt haystack.txt
+
+     output:
+     Matches for: "asdf", where underscores ("_") are wildcards:
+     match at index: 0 with string: asdf
+     match at index: 7 with string: asdf
+     match at index: 11 with string: asdf
+
+
+     >java Oblig3 needle2.txt haystack2.txt
+     
+     output:
+     Matches for: "as_f", where underscores ("_") are wildcards:
+     match at index: 0 with string: asdf
+     match at index: 4 with string: asdf
+     
+     >java Oblig3 needle3.txt haystack3.txt
+
+     output:
+     Matches for: "____", where underscores ("_") are wildcards:
+     match at index: 0 with string: asdf
+     match at index: 1 with string: sdfa
+     match at index: 2 with string: dfas
+     match at index: 3 with string: fasd
+     match at index: 4 with string: asdf
+
+     >java Oblig3 needle4.txt haystack4.txt
+
+     output:
+     Matches for: "____", where underscores ("_") are wildcards:
+     match at index: 0 with string: ----
+     match at index: 1 with string: ----
+     match at index: 2 with string: ----
+     match at index: 3 with string: ----
+     match at index: 4 with string: ----
+
+     >java Oblig3 needle5.txt haystack5.txt
+     
+     output:
+     Needle is empty
+
+     >java Oblig3 needle6.txt haystack6.txt
+
+     output:
+     Matches for: "_s_f", where underscores ("_") are wildcards:
+     match at index: 0 with string: asdf
+     match at index: 4 with string: asdf
+
+     >java Oblig3 needle7.txt haystack7.txt
+
+     output:
+     Matches for: "__1234__", where underscores ("_") are wildcards:
+     match at index: 10 with string: 211234-'

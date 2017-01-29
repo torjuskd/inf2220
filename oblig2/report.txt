@@ -1,0 +1,32 @@
+State the complexity of implementation
+
+Dag.java
+	addTask() - O(1)
+	fix() - O(n)
+	topSort() - O(n*n+n) = O(n²)
+	findLoop() - O(n*dfs) = O(n²)
+	dfs() - O(1+n) = O(n)
+	topSortPrint() - O(n³+n²+n²+n²) = O(n³)  
+	(class Task):
+	printNeighbors() - O(n)
+
+Oblig2.java
+	main() - O(n³) (Has the complexity of the most complex method used)
+	printErrorMessage() - O(1)
+
+ProjectPlanner.java
+	readFile() - O(n)
+	fix() - O(Dag.fix()) - O(n)
+	topSort() - O(Dag.topSort + Dag.topSortPrint()) = O(n²+n³) = O(n³)
+	findLoop() - O(Dag.findLoop()) = O(n²)
+
+
+Justify stated complexity
+
+Most of the complexity of the application is reasonable.
+The exceptions are topSort() and topSortPrint().
+TopSort can be done with complexity O(log n), and
+the topSortPrint()-method can probably be solved within the same
+ballpark of complexity, maybe O(nlog n).
+So my methods have a lot of potential for improvement.
+

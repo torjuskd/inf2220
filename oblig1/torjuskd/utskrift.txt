@@ -1,0 +1,85 @@
+The depth of the tree is: 36
+Nodes at various depths:
+1 node(s) at depth 0
+2 node(s) at depth 1
+4 node(s) at depth 2
+8 node(s) at depth 3
+16 node(s) at depth 4
+32 node(s) at depth 5
+64 node(s) at depth 6
+121 node(s) at depth 7
+218 node(s) at depth 8
+383 node(s) at depth 9
+628 node(s) at depth 10
+990 node(s) at depth 11
+1513 node(s) at depth 12
+2208 node(s) at depth 13
+2949 node(s) at depth 14
+3889 node(s) at depth 15
+4773 node(s) at depth 16
+5670 node(s) at depth 17
+6251 node(s) at depth 18
+6688 node(s) at depth 19
+6690 node(s) at depth 20
+6448 node(s) at depth 21
+5890 node(s) at depth 22
+5101 node(s) at depth 23
+4244 node(s) at depth 24
+3254 node(s) at depth 25
+2395 node(s) at depth 26
+1789 node(s) at depth 27
+1177 node(s) at depth 28
+705 node(s) at depth 29
+429 node(s) at depth 30
+236 node(s) at depth 31
+138 node(s) at depth 32
+60 node(s) at depth 33
+25 node(s) at depth 34
+9 node(s) at depth 35
+3 node(s) at depth 36
+The average depth of all the nodes is: 19.6507 
+First word of the dictionary: abactinally
+Last word of the dictionary: darndests
+
+
+Enter word to search for: 
+achiev
+
+The word was not found.
+Similar words: 
+achive	
+achier	
+achieve	
+Lookups that gave a positive answer: 3
+Time spent to generate and look for similar words: 2ms
+
+
+Enter word to search for: 
+achiese
+
+The word was not found.
+Similar words: 
+achieve	achiest	
+Lookups that gave a positive answer: 2
+Time spent to generate and look for similar words: 2ms
+
+
+Enter word to search for: 
+achievee
+
+The word was not found.
+Similar words: 
+achieved	achiever	achieves	
+achieve	achieve	
+Lookups that gave a positive answer: 5
+Time spent to generate and look for similar words: 3ms
+
+
+Enter word to search for: 
+ahcieve
+
+The word was not found.
+Similar words: 
+achieve	
+Lookups that gave a positive answer: 1
+Time spent to generate and look for similar words: 2ms
